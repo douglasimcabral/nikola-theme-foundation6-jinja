@@ -1,11 +1,11 @@
-## -*- coding: utf-8 -*-
-<%namespace name="base" file="base_helper.tmpl" import="*"/>
+{#  -*- coding: utf-8 -*- #}
+{% import 'base_helper.tmpl' as base with context %}
 
-<%def name="html_footer()">
-    %if content_footer:
+{% macro html_footer() %}
+    {% if content_footer %}
         <footer id="footer">
-            <p><small>${content_footer}</small></p>
-            ${template_hooks['page_footer']()}
+            <p><small>{{ content_footer }}</small></p>
+            {{ template_hooks['page_footer']() }}
         </footer>
-    %endif
-</%def>
+    {% endif %}
+{% endmacro %}

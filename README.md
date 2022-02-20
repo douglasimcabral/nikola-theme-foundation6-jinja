@@ -1,4 +1,4 @@
-# foundation6
+# foundation6-jinja
 
 This is a theme for the static site generator [Nikola](https://getnikola.com) using the [Foundation](http://foundation.zurb.com) framework.
 
@@ -8,11 +8,11 @@ It aims to be simple, elegant and not bloat the overall size of your site too mu
 
 You can install it directly with Nikola:
 
-    nikola install_theme foundation6
+    nikola theme -i foundation6-jinja
 
 ## Usage
 
-In your conf.py set `THEME` to `foundation6`.
+In your conf.py set `THEME` to `foundation6-jinja`.
 
 Rebuild your site.
 
@@ -43,5 +43,4 @@ If you want to replace this with your own custom Foundation 6 - i.e. with differ
 
 The Foundation framework is licensed under MIT.
 
-This theme is licensed under APGLv3.
-
+This theme is licensed under AGPLv3.
